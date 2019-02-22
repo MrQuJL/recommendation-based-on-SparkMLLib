@@ -20,17 +20,17 @@ Spark MLlib目前支持4种常见的机器学习问题: 分类、回归、聚类
 
 * 构建用户对物品的打分矩阵
 
-![image](https://github.com/MrQuJL/recommendation-based-on-SparkMLLib/raw/master/imgs/rating.png)
+	![image](https://github.com/MrQuJL/recommendation-based-on-SparkMLLib/raw/master/imgs/rating.png)
 
 * 根据余弦相似度公式计算**用户**相似度矩阵
 
-<a href="https://github.com/MrQuJL/product-recommendation-system" target="_blank">余弦相似度计算公式</a>：
+	<a href="https://github.com/MrQuJL/product-recommendation-system" target="_blank">余弦相似度计算公式</a>：
 
-![image](https://github.com/MrQuJL/recommendation-based-on-SparkMLLib/raw/master/imgs/similarity.png)
+	![image](https://github.com/MrQuJL/recommendation-based-on-SparkMLLib/raw/master/imgs/similarity.png)
 
-<a href="https://github.com/MrQuJL/product-recommendation-system" target="_blank">用户相似度矩阵：</a>
+	<a href="https://github.com/MrQuJL/product-recommendation-system" target="_blank">用户相似度矩阵：</a>
 
-![image](https://github.com/MrQuJL/recommendation-based-on-SparkMLLib/raw/master/imgs/usersimilarity.png)
+	![image](https://github.com/MrQuJL/recommendation-based-on-SparkMLLib/raw/master/imgs/usersimilarity.png)
 
 * 找出与指定用户相似度最高的前N个用户
 
@@ -82,21 +82,21 @@ ALS算法是2008年以来，用的比较多的协同过滤算法。它已经集�
 
 1. 下面的矩阵R表示：观众对电影的喜好，即：打分的情况。注意：实际情况下，这个矩阵可能非非常庞大，并且是一个稀疏矩阵。
 
-![image](https://github.com/MrQuJL/recommendation-based-on-SparkMLLib/raw/master/imgs/r.png)
+	![image](https://github.com/MrQuJL/recommendation-based-on-SparkMLLib/raw/master/imgs/r.png)
 
 
 2. 这时，我们可以把这个大的稀疏矩阵R，拆分成两个小一点的矩阵：U和V。通过U和V来近似表示R，如下图：
 
-![image](https://github.com/MrQuJL/recommendation-based-on-SparkMLLib/raw/master/imgs/ruv.png)
+	![image](https://github.com/MrQuJL/recommendation-based-on-SparkMLLib/raw/master/imgs/ruv.png)
 
 
 * U 矩阵代表：用户的特征，包括三个维度：性格，文化程度，兴趣爱好
 
-![image](https://github.com/MrQuJL/recommendation-based-on-SparkMLLib/raw/master/imgs/u.png)
+	![image](https://github.com/MrQuJL/recommendation-based-on-SparkMLLib/raw/master/imgs/u.png)
 
 * V 矩阵代表：电影的特征，也包括三个维度：性格，文化程度，兴趣爱好
 
-![image](https://github.com/MrQuJL/recommendation-based-on-SparkMLLib/raw/master/imgs/v.png)
+	![image](https://github.com/MrQuJL/recommendation-based-on-SparkMLLib/raw/master/imgs/v.png)
 
 3. 这样，U和V的乘积，近似表示R。
 
