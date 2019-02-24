@@ -38,7 +38,6 @@ Spark MLlib目前支持4种常见的机器学习问题: 分类、回归、聚类
 
 #### 代码实现：
 
-	```scala
 	import org.apache.log4j.Logger
 	import org.apache.log4j.Level
 	import org.apache.spark.SparkConf
@@ -128,7 +127,6 @@ Spark MLlib目前支持4种常见的机器学习问题: 分类、回归、聚类
 		sc.stop()
 	  }
 	}
-	```
 
 ### （二）、基于物品（Item CF）的协同过滤算法
 
@@ -144,7 +142,6 @@ Spark MLlib目前支持4种常见的机器学习问题: 分类、回归、聚类
 
 #### 代码实现：
 
-	```scala
 	import org.apache.spark.SparkConf
 	import org.apache.spark.SparkContext
 	import org.apache.spark.mllib.linalg.distributed.MatrixEntry
@@ -219,7 +216,6 @@ Spark MLlib目前支持4种常见的机器学习问题: 分类、回归、聚类
 		ij2.foreach(println)
 	  }
 	}
-	```
 
 ### （三）、基于 ALS 的协同过滤算法
 
@@ -265,7 +261,6 @@ ALS算法是2008年以来，用的比较多的协同过滤算法。它已经集�
 
 #### 代码实现：
 
-	```scala
 	import org.apache.spark.mllib.recommendation.ALS
 	import org.apache.log4j.Logger
 	import org.apache.log4j.Level
@@ -351,4 +346,3 @@ ALS算法是2008年以来，用的比较多的协同过滤算法。它已经集�
 		
 	  }
 	}
-	```
